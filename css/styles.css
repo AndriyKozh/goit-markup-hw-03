@@ -132,6 +132,8 @@ body {
 .contakt-list {
   color: var(--color-fone);
   text-decoration: none;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .contakt-list:hover,
