@@ -9,7 +9,6 @@
 body {
   font-family: Roboto, sans-serif;
   color: var(--accent-color-text);
-  background-color: #e5e5e5;
 }
 
 .content-header {
@@ -465,7 +464,7 @@ ul {
   border-top: none;
 }
 
-.portfolio-list::not(:last-child) .portfolio-content-title {
+.portfolio-content-title {
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
