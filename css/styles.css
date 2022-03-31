@@ -21,9 +21,25 @@ body {
   background-color: var(--color-text);
 }
 
-.margin-block {
-  margin-top: 0;
-  margin-bottom: 0;
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  list-style: none;
+  text-decoration: none;
+}
+ul {
+  margin: 0;
   padding-left: 0;
 }
 
@@ -47,7 +63,7 @@ body {
 /*Шапка сайта*/
 .header {
   border-bottom: 1px solid #ececec;
-  width: 1600px;
+
   height: 80px;
   background-color: var(--color-text);
 }
@@ -85,11 +101,11 @@ body {
   letter-spacing: 0.02em;
   list-style: none;
 }
-.header-info .nav-li {
+.header-info .nav-item: {
   margin-right: 50px;
 }
 
-.header-info .nav-li:last-child {
+.header-info .nav-item:last-child {
   margin-right: 0;
 }
 .header-list {
@@ -151,8 +167,10 @@ body {
 }
 
 .mine-title-content {
+  padding-top: 200px;
+  padding-bottom: 200px;
   text-align: center;
-  width: 1600px;
+  max-width: 1600px;
   margin: 0 auto;
   background-color: #2f303a;
 }
@@ -160,8 +178,7 @@ body {
 .title {
   margin-top: 0px;
   margin-bottom: 0px;
-  padding-top: 200px;
-  padding-bottom: 30px;
+  margin-bottom: 30px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.38;
@@ -171,7 +188,6 @@ body {
 }
 
 .button {
-  margin-bottom: 200px;
   display: inline-block;
   padding: 10px 32px;
   min-width: 200px;
@@ -186,14 +202,12 @@ body {
   background-color: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  margin-top: 30px;
 }
 
 /* Переваги */
 
-.main-benefits {
-}
-
-.main-benefits .benefits-list:last-child {
+.benefits-list:last-child {
   margin-right: 0px;
 }
 
@@ -294,7 +308,6 @@ body {
 }
 
 .team-title {
-  margin-top: 30px;
   margin-bottom: 10px;
   text-align: center;
   font-weight: 500;
@@ -302,9 +315,12 @@ body {
   line-height: 1.18;
   letter-spacing: 0.03em;
 }
+.team-info {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
 
 .team-text {
-  margin-bottom: 30px;
   text-align: center;
   font-size: 16px;
   line-height: 1.18;
@@ -317,7 +333,6 @@ body {
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
-  width: 1600px;
   background-color: #2f303a;
 }
 
@@ -341,6 +356,10 @@ body {
   margin-top: 20px;
 }
 
+.address-content {
+  font-style: normal;
+}
+
 .footer-list {
   list-style: none;
   font-size: 14px;
@@ -348,8 +367,12 @@ body {
   letter-spacing: 0.03em;
 }
 
-.address-content {
-  font-style: normal;
+.footer-item {
+  margin-bottom: 9px;
+}
+
+.footer-item:last-child {
+  margin-bottom: 0;
 }
 
 .address {
@@ -380,17 +403,19 @@ body {
 .portfolio {
 }
 
-.portfolio-content {
-  padding-top: 94px;
-}
 /*Button*/
 
 .menu {
-  text-align: center;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
 }
 .portfolio-menu {
   display: inline-block;
   margin-right: 8px;
+}
+.portfolio-menu:last-child {
+  margin-right: 0;
 }
 
 .portfolio-list-button {
@@ -428,31 +453,33 @@ body {
 }
 
 .portfolio-list {
-  display: inline-block;
-  margin-top: 30px;
+  margin-bottom: 30px;
   background: #ffffff;
+  list-style: none;
+  text-decoration: none;
+}
+
+.portfolio-content-menu {
+  padding: 20px 24px 20px 24px;
   border: 1px solid #eeeeee;
   box-sizing: border-box;
+  border-top: none;
 }
 
-.content-img {
-  display: block;
-}
-
-.portfolio-content-title {
+.portfolio-list::not(:last-child) .portfolio-content-title {
+  font-style: normal;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  margin-top: 20px;
-  margin-left: 24px;
+  color: var(--accent-color-text);
 }
 
 .portfolio-content-list {
+  font-style: normal;
+  font-weight: 400;
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
   color: var(--color-fone);
-  margin-bottom: 20px;
-  margin-left: 24px;
 }
