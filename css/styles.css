@@ -101,10 +101,9 @@ ul {
   letter-spacing: 0.02em;
   list-style: none;
 }
-.header-info .nav-item: {
+.header-info .nav-item {
   margin-right: 50px;
 }
-
 .header-info .nav-item:last-child {
   margin-right: 0;
 }
